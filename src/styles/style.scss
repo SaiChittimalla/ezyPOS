@@ -1,0 +1,205 @@
+$lightRed: #fde7d7;
+$text-color: #ffffff;
+$borer-radius-50: 50%;
+$gray-bg: #f4f5f6;
+$wid-height: 32px;
+$sidebackground: #f8f8f8;
+:root {
+    --globarcolo: #e23744;
+}
+body {
+    background-color: $sidebackground;
+    height: 100vh;
+}
+.login-btn {
+    background-color: var(--globarcolo) !important;
+    color: $text-color !important;
+}
+.loginbackground {
+    background-color: $sidebackground !important;
+}
+.v-app-bar {
+    background-color: $text-color;
+}
+.v-layout {
+    background-color: $sidebackground;
+}
+
+.header-div {
+    background-color: $sidebackground;
+    position: sticky;
+    top: 64px;
+    z-index: 1000;
+}
+.activet-class {
+    background: var(--globarcolo) !important;
+    color: $text-color !important;
+    transition: all 0.5s;
+}
+a:hover {
+    background: var(--globarcolo) !important;
+    color: $text-color !important;
+    transition: all 0.5s;
+}
+a:hover .v-icon {
+    color: $text-color !important;
+    transition: all 0.5s;
+}
+.v-list-item--density-compact.v-list-item--one-line {
+    color: #222222;
+}
+.v-list-item__prepend {
+    color: var(--globarcolo);
+}
+.v-list-item--active .v-list-item__prepend > .v-icon {
+    color: $text-color;
+}
+.v-navigation-drawer__content {
+    background-color: $sidebackground;
+}
+.v-expansion-panel--active > .v-expansion-panel-title:not(.v-expansion-panel-title--static) {
+    padding: 0px 117px 0px 9px !important;
+    min-height: 48px !important;
+}
+.v-expansion-panel-title {
+    flex-direction: row-reverse;
+    justify-content: space-between !important;
+    padding: 0px 117px 0px 9px !important;
+    transition: 5s all ease-in-out;
+    background-color: $sidebackground;
+}
+.v-expansion-panel-title__icon {
+    margin-inline-start: unset !important;
+    border: 1px solid #eeeeee;
+}
+.v-expansion-panel-text__wrapper {
+    padding: 0px !important;
+    background-color: $sidebackground;
+}
+.v-expansion-panel-text__wrapper .Accord-item {
+    padding: 0px 8px 0px 8px !important;
+    border-radius: 5px;
+}
+.v-list-item__prepend > .v-icon {
+    opacity: 1 !important;
+}
+.v-navigation-drawer--left {
+    border-right-width: inherit !important;
+}
+.border-div {
+    border: 1px solid #eeeeee;
+    padding: 20px;
+    box-shadow: 0px 3px 2px 0px #0000000d;
+    border-radius: 10px;
+    background: $text-color;
+}
+
+.page-name {
+    color: #999999;
+    margin: 15px 0px 0px 20px;
+    font-size: 13px;
+}
+.actions-btn {
+    margin: 5px;
+    .v-btn {
+        background-color: var(--globarcolo);
+        color: $text-color;
+    }
+}
+.Profile-icon {
+    background-color: $lightRed !important;
+    border-radius: $borer-radius-50 !important;
+    width: $wid-height !important;
+    min-width: $wid-height !important;
+    height: $wid-height !important;
+    color: var(--globarcolo) !important;
+}
+.input-field {
+    background-color: $gray-bg !important;
+    width: 170px;
+    height: $wid-height;
+    border-radius: 4px 0px 0px 0px;
+}
+
+.Upload-btn {
+    background-color: $text-color !important;
+    color: var(--globarcolo) !important;
+}
+.upload-img {
+    font-size: 50px !important;
+}
+.upload-height {
+    height: 100vh;
+}
+.selecting {
+    width: 150px !important;
+    height: $wid-height;
+    border-radius: 4px 0px 0px 0px;
+}
+.v-input__control {
+    background-color: $gray-bg;
+    height: 42px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.v-checkbox-btn {
+    background-color: $text-color;
+}
+.th-change {
+    .v-checkbox-btn {
+        background-color: transparent !important;
+    }
+}
+.v-field__append-inner {
+    color: var(--globarcolo);
+}
+.v-field--variant-filled {
+    border-bottom: $text-color;
+}
+thead {
+    border-radius: 6px;
+}
+tr:hover {
+    background-color: $gray-bg;
+}
+.v-table.v-table--fixed-header > .v-table__wrapper > table > thead > tr > th {
+    background-color: $gray-bg !important;
+}
+
+.v-table .v-table__wrapper > table > tbody > tr:not(:last-child) > td,
+.v-table .v-table__wrapper > table > tbody > tr:not(:last-child) > th {
+    border-bottom: none !important;
+}
+.v-data-table-footer {
+    justify-content: space-between !important;
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+}
+
+.v-data-table {
+    white-space: nowrap;
+    line-height: 0.5 !important;
+}
+@media (min-width: 576px), (max-width: 767.98px) {
+}
+.error {
+    color: var(--globarcolo);
+    font-size: 12px;
+}
+.setting-padding {
+    padding: 0px 0px 0px 0px !important;
+}
+.arrows {
+    font-size: 35px;
+    color: white;
+    animation: bounce infinite 1.5s forwards alternate;
+}
+@keyframes bounce {
+    100% {
+        transform: translateY(20px);
+    }
+    0% {
+        transform: translateX(0px);
+    }
+}
